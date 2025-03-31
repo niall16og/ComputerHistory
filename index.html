@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang=en>
+	<head>
+		<title>Computer History</title>
+		<link rel="stylesheet" href="style.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" width="device-width" initial-scale="1.0">
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="wrapper">
+			<aside>
+				<h1>Decade Summary</h1>
+				<div class="sCont s40">
+					<h1>1940's</h1>
+					<p>Electromechanical computers developed using electrical switches to move mechanical parts.</p><br>
+					<p><b>Code-breaking became crucial during WWII: </b>
+					<br>Top-secret operations at Bletchley Park led by Alan Turing.<br>
+						<b>Enigma machine and Bombe</b> used electromechanical technology for code-breaking.<br> These were not general-purpose computers but advanced technology for their time.<br>
+						The intelligence gathered from Bletchley Park shortened WWII by two years, saving an estimated 14 million lives.</p>
+				</div>
+				<div class="sCont s50">
+					<h1>1950's</h1>
+					<p>Transistors revolutionized computing hardware, replacing vacuum tubes with smaller, faster, and more reliable alternatives.</p>
+				</div>
+				<div class="sCont s60">
+					<h1>1960's</h1>
+					<p>The third generation of computers introduced integrated circuits</p>
+					<p>Apollo Guidance Computer (AGC) designed at MIT: pivotal for the Apollo moon landing missions. Margaret Hamilton led the software development team.</p>
+					<p>Minicomputers became portable and practical during this era.</p>
+				</div>
+				<div class="sCont s70">
+					<h1>1970's</h1>
+					<p>Microprocessors transformed computing, enabling personal computers and introducing compact, affordable designs.</p>
+				</div>
+				<div class="sCont s80">
+					<h1>1980's</h1>
+					<p>The 1980s saw the rise of personal computers (IBM PC, Apple Macintosh), GUIs, Microsoft Windows, and the CD-ROM. Networking foundations like DNS and the early web emerged, alongside gaming milestones like the NES.</p>
+				</div>
+				<div class="sCont s90">
+					<h1>1990's</h1>
+					<p>The 1990s were a transformative decade, marked by the rise of the internet, advancements in software and hardware, and the emergence of technologies that continue to shape our world today.</p>
+				</div>
+				<div class="sCont s00">
+					<h1>2000's</h1>
+					<p>The 2000s were a decade of rapid technological growth, laying the foundation for the digital age we live in today.</p>
+				</div>
+				<div class="sCont s10">
+					<h1>2010's</h1>
+					<p>The 2010s were a decade of innovation, with advancements in AI, smart devices, and connectivity shaping the modern digital landscape.</p>
+				</div>
+				<div class="sCont s20">
+					<h1>2020's</h1>
+					<p>The 2020s are shaping up as the Decade of AI and Sustainability, with significant advancements in artificial intelligence, biotechnology, energy, and space exploration leading the way.</p>
+				</div>
+				<!--<div class="sCont sPres">
+					<h1>Present</h1>
+					<p>m fmgm rfrgrr rgggggggr vojsdnvsdonvsdov vnsdvinsdvndsv vnsdvnsdv</p>
+				</div>-->
+				<div class="sCont sFut">
+					<h1>Future</h1>
+					<p>The future holds immense possibilities with AI, quantum computing, and sustainable technologies shaping the next era.</p>
+				</div>
+			</aside>
+			<div id="root-overlay"></div>
+			<div class="fade"></div>
+			<button id="left" onclick="scrollBack()" ><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#1f1f1f"><path d="M560.67-240 320-480.67l240.67-240.66L608-674 414.67-480.67 608-287.33 560.67-240Z"/></svg></button>
+			<div class="timeline">
+				<div class="item first">
+					<span></span>
+					<div class="content d40">
+						<div class="innerContent">
+							<h3 class="date">1941</h3>
+							<p>Z3 built in Germany, the first programmable digital computer. Used binary numbers instead of decimal, reducing complexity.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d40">
+						<div class="innerContent">
+							<h3 class="date">1943</h3>
+							<p>Colossus, developed late in WWII, was the first electronic, digital programmable computer used for code-breaking.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d40">
+						<div class="innerContent">
+							<h3 class="date">1946</h3>
+							<p>ENIAC released publicly on February 14, 1946: the first general-purpose, electronic, programmable computer.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d50">
+						<div class="innerContent">
+							<h3 class="date">1957</h3>
+							<p>IBM 608, the first fully transistorized computer, performed 4,500 additions per second, costing over €500,000 in today's money.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d60">
+						<div class="innerContent">
+							<h3 class="date">1964</h3>
+							<p>CDC 6600, developed as the first commercially viable supercomputer, costing approximately €20 million (in today's money).</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d60">
+						<div class="innerContent">
+							<h3 class="date">1968</h3>
+							<p>Intel Corporation was founded by Robert Noyce and Gordon Moore.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d70">
+						<div class="innerContent">
+							<h3 class="date">1971</h3>
+							<p>Intel 4004, the first microprocessor, marking a monumental step forward in computer design and functionality.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d70">
+						<div class="innerContent">
+							<h3 class="date">1977</h3>
+							<p>Apple launched the Apple II, one of the first highly successful personal computers</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d80">
+						<div class="innerContent">
+							<h3 class="date">1981</h3>
+							<p>The IBM PC 5150 was released, a groundbreaking personal computer that set the standard for modern computing</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d80">
+						<div class="innerContent">
+							<h3 class="date">1983</h3>
+							<p>The Domain Name System (DNS) was introduced, laying the foundation for modern web addresses.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d80">
+						<div class="innerContent">
+							<h3 class="date">1984</h3>
+							<p>Apple launched the Macintosh, a revolutionary personal computer with a GUI and mouse.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d80">
+						<div class="innerContent">
+							<h3 class="date">1985</h3>
+							<p class="no1-85">Microsoft released the first version of Windows, a graphical operating system.</p>
+							<p class="no2-85">The Nintendo Entertainment System (NES) was launched in North America, revitalizing the video game industry.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d80">
+						<div class="innerContent">
+							<h3 class="date">1989</h3>
+							<p>Tim Berners-Lee proposed the concept of the World Wide Web, which would revolutionize how information is shared. This would eventually lead to the development of HTML and websites, such as this one, as we know it today.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d90">
+						<div class="innerContent">
+							<h3 class="date">1990</h3>
+							<p>The first web browser, WorldWideWeb (later renamed Nexus), was created by Tim Berners-Lee, marking the birth of the World Wide Web.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d90">
+						<div class="innerContent">
+							<h3 class="date">1991</h3>
+							<p>The Linux operating system was introduced by Linus Torvalds, becoming a cornerstone of open-source software.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d90">
+						<div class="innerContent">
+							<h3 class="date">1992</h3>
+							<p>The first text message was sent by Neil Papworth, saying "Merry Christmas."</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d90">
+						<div class="innerContent">
+							<h3 class="date">1993</h3>
+							<p>Yahoo! was founded, becoming one of the first major web directories.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d90">
+						<div class="innerContent">
+							<h3 class="date">1995</h3>
+							<p class="no1-85">Amazon was launched as an online bookstore, later expanding into the e-commerce giant we know today.</p>
+							<p class="no2-85">Java programming language was introduced, enabling cross-platform software development.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d90">
+						<div class="innerContent">
+							<h3 class="date">1997</h3>
+							<p>IBM's Deep Blue defeated world chess champion Garry Kasparov, showcasing advancements in artificial intelligence.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d90">
+						<div class="innerContent">
+							<h3 class="date">1998</h3>
+							<p>Google was founded, revolutionizing how we search for information online.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d90">
+						<div class="innerContent">
+							<h3 class="date">1999</h3>
+							<p>The Wi-Fi standard (802.11b) was introduced, enabling wireless internet connectivity.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d00">
+						<div class="innerContent">
+							<h3 class="date">2001</h3>
+							<p>Wikipedia was launched, revolutionizing access to knowledge.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d00">
+						<div class="innerContent">
+							<h3 class="date">2003</h3>
+							<p>MySpace became the first major social media platform, paving the way for others.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d00">
+						<div class="innerContent">
+							<h3 class="date">2005</h3>
+							<p>YouTube debuted, revolutionizing video sharing and content consumption.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d00">
+						<div class="innerContent">
+							<h3 class="date">2006</h3>
+							<p class="no1-85">Amazon introduced AWS (Amazon Web Services), pioneering cloud computing.</p>
+							<p class="no2-85">Twitter sent its first tweet, popularizing microblogging.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d00">
+						<div class="innerContent">
+							<h3 class="date">2007</h3>
+							<p>Apple launched the iPhone, ushering in the smartphone era.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d00">
+						<div class="innerContent">
+							<h3 class="date">2008</h3>
+							<p>Bitcoin was introduced, marking the beginning of blockchain technology and cryptocurrency.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d00">
+						<div class="innerContent">
+							<h3 class="date">2009</h3>
+							<p>4G networks rolled out, enabling faster mobile internet and advanced applications.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d10">
+						<div class="innerContent">
+							<h3 class="date">2014</h3>
+							<p>Tesla released Autopilot, advancing self-driving car technology.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d10">
+						<div class="innerContent">
+							<h3 class="date">2018</h3>
+							<p>GDPR (General Data Protection Regulation) was implemented in the EU, reshaping global data privacy standards.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d10">
+						<div class="innerContent">
+							<h3 class="date">2019</h3>
+							<p>5G networks began rolling out, enabling faster mobile internet and new possibilities for connected devices.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content d20">
+						<div class="innerContent">
+							<h3 class="date">2023</h3>
+							<p>AI-powered systems, like OpenAI's ChatGPT and Codex, gained widespread use for creating and coding assistance, highlighting the rapid adoption of artificial intelligence.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<span></span>
+					<div class="content future">
+						<div class="innerContent">
+							<h3 class="date">late 2020's</h3>
+							<p><b>Quantum Computing:</b> Achieving practical quantum computers capable of solving complex problems far beyond the abilities of classical computers.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item last">
+					<span></span>
+					<div class="content future">
+						<div class="innerContent">
+							<h3 class="date">2030's</h3>
+							<p class="no1-85"><b>Artificial General Intelligence (AGI):</b>Development of AI capable of performing tasks across a wide range of domains with human-level adaptability.</p>
+							<p class="no2-85"><b>Brain-Machine Interfaces:</b>Advancements in neural implants and interfaces for seamless interaction between the human brain and computers.</p>
+						</div>
+					</div>
+				</div>
+				<!--<div class="item last">
+					<span></span>
+					<div class="content future">
+						<div class="innerContent">
+							<h3 class="date">Future</h3>
+							<p>vvnsdvnsdkvn dkvnskvsv svksdnvsdv vksdvsdkvsd vdkvsv</p>
+						</div>
+					</div>
+				</div>-->
+			</div>
+			<button id="right" onclick="scrollRight()" ><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#1f1f1f"><path d="M521.33-480.67 328-674l47.33-47.33L616-480.67 375.33-240 328-287.33l193.33-193.34Z"/></svg></button>
+			<div class="fade2"></div>
+		</div>
+		<section class="hopper">
+		  <div class="grace">
+			<h2> Grace Hopper </h2>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGokkLBSmbPXLBjwog5HY6NM_Yckhte8bOYg&s">
+			<p>Grace Hopper documented the "first actual case of a bug being found".</p>
+			<p>Grace Hopper was also a pioneer in programming languages, developing the first compiler in 1952. Her A-0 System translated human-readable instructions into machine code, laying the foundation for modern programming languages like COBOL. Her work made software development more accessible and significantly advanced computing.</p>
+		  </div>
+		  <div class="bug">
+			<h2>Bugs and Debugging</h2>
+			<p>The term "bug" in engineering and computers refers to faults or errors in a mechanism or program.  </p>
+			<p>The first recorded use of the term for this purpose was in 1878 when Thomas Edison referenced the term in a letter. </p>
+		   <p>Another term common in computing today is "debugging", the act of finding the root of a problem in a program which inhibits it from working correctly, and removing or correcting the error, i.e the process of removing a 'bug'.</p>
+		   <p>One of the first references of "debugging" was made by Robert Oppenheimer in 1944, in a letter to Ernest Lawrence.</p>
+			<p>However, it is quite likely that neither of these terms would be used as they currently are now in computing if it weren't for a team of engineers working on the Harvard Mark II Computer. The computer was not operating correctly due to a moth, that the team later discovered caught in one of the relays of the machine</p>
+			<p>One of the members of this team, Grace Hopper, documented this event in a journal on 9th September 1947. She taped the moth to the page and described it as the "first actual case of a bug being found".</p>
+			<img src="https://cdn.mos.cms.futurecdn.net/pR3F2rFbaH9M3AsbGJHD2D.jpg">
+		  </div>
+		</section>
+		<script src="main.js"></script>
+	</body>
+</html>
