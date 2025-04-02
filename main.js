@@ -219,3 +219,57 @@ pres.forEach((pres) => observerSideNeg.observe(pres));
 future.forEach((future) => observerSide.observe(future));
 future.forEach((future) => observerSideNeg.observe(future));
 */
+
+
+
+let player;
+
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('youtubePlayer', {
+        events: {
+            'onReady': onPlayerReady
+        }
+    });
+}
+
+function onPlayerReady(event) {
+    console.log("YouTube Player is ready!");
+}
+
+const openPop = document.querySelector("#openPop");
+const closePop = document.querySelector("#closePop");
+
+const popup = document.querySelector("#popup");
+
+openPop.onclick = () => {
+    popup.style.display = "block";
+    popup.style.left = "200px";
+    popup.style.top = "0";
+    if (player) {
+        player.playVideo();
+    }
+};
+closePop.onclick = () => {
+    popup.style.display = "none";
+    if (player) {
+        player.pauseVideo();
+    }
+};
+
+let offsetX, offsetY;
+
+const move = (e) => {
+    popup.style.left = `${e.clientX - offsetX}px`;
+    popup.style.top = `${e.clientY - offsetY}px`;
+};
+
+popup.addEventListener("mousedown", (e) => {
+    offsetX = e.clientX - popup.offsetLeft;
+    offsetY = e.clientY - popup.offsetTop;
+    document.addEventListener("mousemove", move);
+
+});
+
+document.addEventListener("mouseup", () => {
+    document.removeEventListener("mousemove", move);
+});
